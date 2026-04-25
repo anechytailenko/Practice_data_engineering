@@ -1,0 +1,15 @@
+duckdb_minio_profile:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'local_database.duckdb'
+      extensions:
+        - httpfs
+      settings:
+        s3_endpoint: '127.0.0.1:9002'
+        s3_access_key_id: 'minioadmin'
+        s3_secret_access_key: 'minioadmin'
+        s3_use_ssl: false
+        s3_url_style: 'path'
+        s3_region: 'us-east-1'

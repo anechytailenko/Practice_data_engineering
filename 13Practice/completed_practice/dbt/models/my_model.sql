@@ -1,0 +1,1 @@
+SELECT * FROM {{ source('minio_source', 'my_data') }}

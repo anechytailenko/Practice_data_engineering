@@ -1,0 +1,3 @@
+pyarrow==23.0.0
+pandas>=2.2.0
+pyspark==4.1.1

@@ -1,0 +1,13 @@
+{
+    // Указываем редактору точный путь к главному файлу Python внутри вашего окружения.
+    // Это решит 99% проблем с красными подчеркиваниями отсутствующих библиотек.
+    "python.defaultInterpreterPath": "../../.venv/bin/python",
+    // Если вы используете Poetry, оставляем эти настройки
+    "python-envs.defaultEnvManager": "ms-python.python:poetry",
+    "python-envs.defaultPackageManager": "ms-python.python:poetry",
+    // Оставляем только путь к корню папки Practice, чтобы Python видел 
+    // другие ваши локальные файлы, если вы будете их импортировать.
+    "python.analysis.extraPaths": [
+        "../../"
+    ]
+}

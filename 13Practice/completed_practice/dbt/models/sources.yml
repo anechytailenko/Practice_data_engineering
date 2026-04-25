@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: minio_source
+    loader: duckdb
+    tables:
+      - name: my_data
+        config:
+          external_location: "s3://my-dbt-source/my_data.csv"
